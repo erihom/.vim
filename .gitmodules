@@ -1,3 +1,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/cscope_macros"]
+	path = bundle/cscope_macros
+	url = git://github.com/vim-scripts/cscope_macros.vim.git
