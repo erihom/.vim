@@ -4,3 +4,6 @@
 [submodule "bundle/cscope_macros"]
 	path = bundle/cscope_macros
 	url = git://github.com/vim-scripts/cscope_macros.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
