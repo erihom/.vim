@@ -7,6 +7,9 @@ call pathogen#helptags()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set map leader to ","
+let mapleader = ","
+
 " Sets how many lines of history VIM has to remember
 set history=1000
 
@@ -127,23 +130,6 @@ set path+=$workAlgorithmsSw/release/inc
 inoremap ,. <Esc>
 "reference nnoremap <C-]> <Esc>:exe "ptjump " . expand("<cword>")<Esc>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Taglist plugin
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:map <F2> :TlistToggle <CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => NERDTree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:map <F1> :NERDTreeToggle <CR>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Window and Tabs
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:map <C-Tab> :tabnext <CR>
-:map <C-S-Tab> :tabprev <CR>
-:map <F12> :bd <CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
@@ -164,4 +150,18 @@ endfunction
 " => Remove trailing whitespaces
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F5> :call Preserve("%s/\s\+$//e")<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:map <F2> :TlistToggle <CR>
+:map <F1> :NERDTreeToggle <CR>
+:map <C-Tab> :tabnext <CR>
+:map <C-S-Tab> :tabprev <CR>
+:map <F12> :bd <CR>
+:map <leader>a  :Ack
+:map <leader>c  :Ack --c
+:map <leader>h  :Ack --h
+:map <leader>ch :Ack --ch
+:map <leader>m  :Ack --matlab
 
