@@ -77,7 +77,7 @@ if has("gui_running")
  colorscheme molokai
 endif
 
-"set gfn=Monospace\ 10
+set gfn=Menlo:h12
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
